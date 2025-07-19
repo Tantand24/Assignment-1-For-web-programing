@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+    <script src="./script/temperture.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbarItemContainer">
+            <div class="navbarItem"><a href="index.html">Home</a></div>
+            <div class="navbarItem"><a href="MarktoGrade.html">Mark to Grade</a></div>
+            <div class="navbarItem"><a href="StaffPage.html">Staff Page</a></div>
+            <div class="navbarItem"><a href="temperatureConverter.html">Temperature Converter</a></div>
+        </div>
+    </nav>
+    <main>
+        <h3>Temperature Converter</h3>
+        <form id="temperatureConverterForm">
+            <p>Pick Temperature Measurement unit to convert to then input a value</p>
+            <div id="tempformdiv">
+                <div class="tempformdiv">
+                    <label for="GivenTempToConvert">Pick Temperature</label>
+                    <div>
+                        <input type="radio" id="Celsius" name="TemperatureType" value="Celsius">
+                        <label for="Celsius">Celsius</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="Fahrenheit" name="TemperatureType" value="Fahrenheit">
+                        <label for="Fahrenheit">Fahrenheit</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="Kelvin" name="TemperatureType" value="Kelvin">
+                        <label for="Kelvin">Kelvin</label><br>
+                    </div>
+                </div>
+                <div class="tempformdiv">
+                    <label for="GivenTempToConvert">Input Temperature</label>
+                    <input type="number" id="GivenTempToConvert">
+                    <button type="submit">Convert</button>
+                </div>
+            </div>
+        </form>
+        <div id="ConvertedValue">
+    </main>
+    <footer id="footerbar">
+        <h5>Tristan Dang copyright © 2025</h5>
+    </footer>
+</body>
+</html>

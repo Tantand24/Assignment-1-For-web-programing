@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar style */
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+#navbarItemContainer {
+    display: flex;
+    list-style-type: none;
+    justify-content: center ;
+}
+
+.navbarItem {
+    padding: 5px;
+    border: 2px solid lightcyan;
+    width: 10vw;
+    text-align: center;
+}
+
+/* Footer style */
+footer {
+  background-color: lightblue;  
+  height: 6vh;
+}
+
+/* Home page style section */ 
+#mainPage{
+    display: flex;
+    flex-direction: row;
+}
+
+#MainAside{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 10px;
+    width: 30vw;
+}
+
+#Paragraph1, #Paragraph2{
+    background-color: lightcyan;
+    height: 20vh;
+}
+
+#doggoImage {
+    width: 20vw;
+    margin-left: 20vw;
+    opacity: 0;
+    filter: alpha(opacity=40)
+}
+
+
+
+/* temperature page style section */ 
+#temperatureConverterForm, .tempformdiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.tempformdiv{
+    width: 30vw;
+}
+
+#tempformdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Staff list page style section */ 
+#MainStaff h3{
+    margin: 10px;
+}
+
+.StaffName, .StaffPostion{
+    width: 20vw;
+}
+
+.StaffLocation{
+    width: 10vw;
+}
+
+.StaffOtherInfo{
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.StaffCard {
+    padding: 4px;
+}
